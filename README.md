@@ -1,3 +1,5 @@
+<div id="top"></div>
+
 <h3 align="center">
   A Spring Boot Todolist - Case Study
 </h3>
@@ -22,63 +24,116 @@
   <a href="#-about">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-commands">Commands</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-license">License</a>
 </p>
 
-<img alt="Repository image example" src="/public/opengraph-image.jpg">
+<img alt="Repository image example" src="./repo-image.png">
 
-</br></br>
+<br/>
 
 ## 🌐 About
+A simple and fullstack web todolist application with Spring Boot API Rest and React front-end.  
 
-This portfolio is a simple web todolist application. Your function it's simple: get comprehension about Java and Spring Boot concepts
-
-</br>
+<br/>
 
 ## 🚀 Technologies
 
 Resources that I used to develop this project
 
+### Front-end
+
+- [Typescript](https://www.typescriptlang.org/) - A superset to Javascript vanilla 
+- [React](https://react.dev/) - Library to construct UI Interfaces
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework to optimize stylization 
+
+### Backend
+
 - [Java](https://docs.oracle.com/en/java/) - programming language
-- [Maven](https://maven.apache.org/) - a boilerplate constructor for Java
+- [Maven](https://maven.apache.org/) - a project boilerplate constructor for Java
 - [Spring Boot](https://spring.io/) - a Java framework 
 - [H2Database](http://h2database.com/html/main.html) - a Java SQL database
-- [Lombok](https://projectlombok.org/) - library to automate getters, setters, constructors, etc.
+- [Lombok](https://projectlombok.org/) - library to reduce verbosity with Annotations (getters, setters)
 - [ApiDog](https://apidog.com/) - a API client to make endpoint tests easier
 
-</br>
+<br/>
 
 ## 💻 Getting started
 
-### Requirements
+### **Requirements**
 
-**Clone the project and access the folder**
+To run this project, you need to have Java installed on your machine. If you have Java, now you can **clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/bscarpari/bscarpari.github.io.git && cd bscarpari.github.io
+# Clone the project 
+git clone https://github.com/bscarpari/spring-todo-list.git
+
+# Navigate to the project folder
+cd todolist
+
+# Open in your IDE (me: VSCODE)
+code .
 ```
 
 <br/>
 
-## 🧩 Commands
+### **How to run (local)**
 
-All commands are run from the root of the project, from a terminal:
+Open two terminals to make easy the above instructions 
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+#### **Back-end**
+
+1. Navigate to the server code:
+
+```bash
+cd server/
+```
+
+2. Start the Spring Boot pressing the F5 in any *.java* file
+
+3. Now, you ignore the backend terminal and start the front-end steps.
+
+<br/>
+
+#### **Front-end**
+
+1. Navigate to the front-end code  
+
+```bash
+cd client/
+```
+
+2. Execute the command with you favorite package manager:
+
+```bash
+  # PNPM
+ pnpm run dev
+
+  # NPM
+  npm run dev
+
+  # YARN
+  yarn run dev 
+```
+
+2. Open the application on localhost:
+
+```
+https://localhost:3000/
+```
+
+3. Now, you can test all the application
 
 <br/>
 
 ## 🟪 Improvements
 
-- [ ] This is a example task unfinished 
+### **To finish**
+- [ ] Add search logic
+- [ ] Add bulk operations
+- [ ] Create a user profile management 
+
+### **Finished**
+- [X] A finished example task 
 
 <br/>
 
@@ -86,6 +141,5 @@ All commands are run from the root of the project, from a terminal:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Made with 💜 &nbsp;by Bruno Scarpari
+<!-- Navite to the top -->
+<a href="#top">Navigate to the top</a>
