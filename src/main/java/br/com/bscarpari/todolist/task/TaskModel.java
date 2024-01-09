@@ -8,11 +8,13 @@ import org.hibernate.annotations.CreationTimestamp;
 import br.com.bscarpari.todolist.task.enums.Priority;
 import br.com.bscarpari.todolist.task.enums.Status;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
+@Entity(name = "tb_tasks")
 public class TaskModel {
 
     @Id
@@ -28,10 +30,10 @@ public class TaskModel {
     @Column(nullable = false)
     private String description;
 
-    @Column(nullable = false, columnDefinition = "varchar(255) default 'BACKLOG'")
+    @Column(nullable = false)
     private Status status;
 
-    @Column(nullable = false, columnDefinition = "varchar(255) default 'LOW'")
+    @Column(nullable = false)
     private Priority priority;
 
     private LocalDateTime startAt;
